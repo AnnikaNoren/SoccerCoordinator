@@ -123,23 +123,23 @@ print("The average shark height is \(dragonHeight/playersPerTeam) inches")
 
 //create a set to hold letters
 
-var Letters = Set<String>()
+var letters = Set<String>()
 
 //add personalized letters from the 3 rosters to Letters, print to console
 
 for name in raptorTeamRoster{
     var parentInfo = players2[name]![2]
-    Letters.insert("Dear \(parentInfo), Your soccer player \(name) has been placed on the Raptor Soccer Team. Our first team practice will be held on March 18 at 1pm.")
+    letters.insert("Dear \(parentInfo), Your soccer player \(name) has been placed on the Raptor Soccer Team. Our first team practice will be held on March 18 at 1pm.")
 }
 
 for name in dragonTeamRoster{
     var parentInfo = players2[name]![2]
-    Letters.insert("Dear \(parentInfo), Your soccer player \(name) has been placed on the Shark Soccer Team. Our first team practice will be held on March 17 at 3pm.")
+    letters.insert("Dear \(parentInfo), Your soccer player \(name) has been placed on the Dragon Soccer Team. Our first team practice will be held on March 17 at 3pm.")
 }
 
 for name in sharkTeamRoster{
     var parentInfo = players2[name]![2]
-    Letters.insert("Dear \(parentInfo), Your soccer player \(name) has been placed on the Shark Soccer Team. Our first team practice will be held on March 17 at 3pm.")
+    letters.insert("Dear \(parentInfo), Your soccer player \(name) has been placed on the Shark Soccer Team. Our first team practice will be held on March 17 at 3pm.")
 }
 
-print(Letters)
+print(letters)
